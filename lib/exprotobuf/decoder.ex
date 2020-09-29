@@ -1,8 +1,8 @@
-defmodule Protobuf.Decoder do
+defmodule ExProtobuf.Decoder do
   use Bitwise, only_operators: true
-  require Protobuf.Utils, as: Utils
-  alias Protobuf.Field
-  alias Protobuf.OneOfField
+  require ExProtobuf.Utils, as: Utils
+  alias ExProtobuf.Field
+  alias ExProtobuf.OneOfField
 
   # Decode with record/module
   def decode(bytes, module) do
